@@ -18,8 +18,6 @@ app.use(cors(corsOptions));
 
 app.use("/message", messageRouter);
 
-app.set("trust proxy", 6);
-app.use("/api/", (req, res) => res.send(req.ip));
 app.use(notFound);
 app.use(errorHandler);
 
