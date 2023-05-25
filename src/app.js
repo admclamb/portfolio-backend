@@ -6,7 +6,7 @@ const errorHandler = require("./errors/errorHandler");
 const notFound = require("./errors/notFound");
 const messageRouter = require("./message/message.router");
 const { FRONT_END_URL } = process.env;
-
+console.log("FRONT_END_URL");
 const app = express();
 
 const corsOptions = {

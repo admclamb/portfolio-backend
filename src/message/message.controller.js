@@ -8,7 +8,7 @@ const PROPERTIES = ["name", "email", "message"];
 async function createMessage(req, res, next) {
   try {
     const createdMessage = await service.create(req.body.data);
-    res.status(200).json({ data: { createdMessage } });
+    res.status(200).json({ data: "Message successfully sent" });
   } catch (error) {
     return next({ status: 500, message: "Error creating message" });
   }
